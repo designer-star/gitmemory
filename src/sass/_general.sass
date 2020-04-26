@@ -1,0 +1,420 @@
+header
+  position: relative
+
+nav
+  height: 50px
+  background-color: #212121
+  
+.hamburger
+  display: none
+
+.menu
+  padding: 13px 70px
+  display: flex
+  justify-content: space-between
+  list-style-type: none
+  margin: 0
+
+  &_link
+    color: #ffffff
+    font-size: 15px
+    font-weight: 300
+
+  &_item
+    border-right: 2px dotted black
+    padding-right: 30px
+    &:last-child
+      border-right: none
+
+.subheader
+  position: absolute
+  width: 100%
+  height: 84px
+  background-color: rgba(0, 0, 0, 0.6)
+
+ 
+
+  .text_col_first
+    padding: 6px 60px 0 0
+    opacity: 0.5
+    color: #ffffff
+    font-size: 13px
+    font-weight: 400
+
+  .text_col_second_1
+    margin-top: 23px
+    color: #ffffff
+    font-size: 12px
+    font-weight: 300
+
+  .text_col_second_2
+    display: block
+    margin-top: 2px
+    color: #ffffff
+    font-size: 22px
+    font-weight: 400
+    text-transform: uppercase
+
+  .logo
+    padding-top: 16px
+    width: 100%
+
+  .col_button
+    margin: 19px 0
+    width: 172px
+    height: 46px
+    border: none
+    border-radius: 6px
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: 3px solid rgba(0, 0, 0, 0.07)
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+    +hover_btn
+    
+
+.promo
+  padding: 150px 0 135px 0
+  min-height: 800px
+  background: url('../img/header/bacground.png') center (center / cover) no-repeat
+
+  &_header
+    text-align: center
+    margin-bottom: 0
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 60px
+    line-height: 60px
+
+  &_subheader
+    text-align: center
+    color: #ffffff
+    margin-bottom: 0
+    margin-top: 22px
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 36px
+    line-height: 36px
+
+  .promo_descr
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    margin-top: 23px
+
+  .promo_btn
+    display: block
+    margin: 118px auto 0 auto
+    border: none
+    border-radius: 6px
+    width: 259px
+    height: 63px
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+    border: 3px solid rgba(0, 0, 0, 0.07)
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    +hover_btn
+    
+
+.img_route
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #1eacc7
+  border-radius: 100%
+  width: 113px
+  height: 113px
+
+.reasons
+  padding: 71px 0 65px 0
+
+.label
+  margin: 0 auto
+  height: 24px
+  width: 112px
+  padding: 5px 12px
+  background-color: #000000
+  color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+
+.title
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222222
+  font-size: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+.subtitle
+  color: #222222
+  font-size: 17px
+  font-weight: 400
+  text-align: center
+  margin-top: 19px
+
+.reasons .reasons_block
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 35px
+
+  .reasons_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: #1eacc7
+    border-radius: 100%
+
+  .reasons_descr
+    width: 343px
+
+    .reasons_subtitle
+      line-height: 21px
+      color: #1eacc7
+      font-size: 17px
+      font-weight: 400
+
+    .reasons_text
+      color: #202020
+      font-size: 15px
+      font-weight: 300
+      line-height: 21px
+.mobile
+  min-height: 864px
+  padding: 48px 0 80px 0
+  background: url('../img/third/bacground.png') center (center / cover) no-repeat
+  .row
+    margin-top: 32px
+  .label
+    margin-top: 56px
+  &_item
+    position: relative
+    width: 320px
+    height: 280px
+    margin: 0 auto
+    margin-bottom: 19px
+    &_subtitle
+      padding-top: 92px
+      text-align: center
+      color: #ffffff
+      font-size: 24px
+      font-weight: 400
+      line-height: 31px
+      text-transform: uppercase
+    &_plus
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+      cursor: pointer
+      margin: 0 auto
+      width: 26px
+      height: 26px
+      background-color: #000000
+      border-radius: 100%
+      &::before
+        content: ''
+        width: 14px
+        height: 2px
+        transition: 0.5s all
+        background-color: $blue
+      &::after
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        content: ''
+        width: 2px
+        height: 14px
+        background-color: $blue
+        transition: 0.5s all
+      &:hover
+        &::before , &::after
+          background-color: $red
+        
+        
+    &1
+      background: url('../img/third/item1.png') center (center / cover) no-repeat
+    &2
+      background: url('../img/third/item2.png') center (center / cover) no-repeat
+    &3
+      background: url('../img/third/item3.png') center (center / cover) no-repeat
+    &4
+      background: url('../img/third/item4.png') center (center / cover) no-repeat
+    &5
+      background: url('../img/third/item5.png') center (center / cover) no-repeat
+    &6
+      background: url('../img/third/item6.png') center (center / cover) no-repeat
+.car
+  padding: 57px 0 138px 0
+  min-height: 800px
+  background: url('../img/force/bacground.png') center (center / cover) no-repeat
+  .label
+    background-color: #ffffff
+    color: #000
+  .title
+    color: #ffffff
+    font-size: 38px
+    font-weight: 700
+    text-transform: uppercase
+  .subtitle
+    color: #ffffff
+    font-size: 17px
+    font-weight: 400
+  .image
+    margin-top: 56px 
+    display: flex
+    justify-content: center
+  .sttotext
+    color: #222222
+    font-size: 17px
+    font-weight: 300
+    text-align: center
+.require
+  padding: 68px 0 84px 0
+  &_bloc
+    margin: 33px 0
+    &_btn
+      margin-bottom: 0
+      .require_title
+        color: red
+      .require_list
+        li 
+          &::before
+            background: url('../img/fife/icon_red.png') center (center / cover) no-repeat
+  &_title 
+    color: #222222
+    font-size: 17px
+    font-weight: 300
+    // Text style for "У, СЛОВИЯ:"
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+  &_subtitle
+    color: #1ca8c3
+    font-weight: 300
+  &_list
+    margin-top: 22px
+    list-style-type: none
+    padding-inline-start: 50px
+    li
+      position: relative
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 10px
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        left: -32px
+        top: 2px
+        width: 21px
+        height: 20px
+        background: url('../img/fife/icon_blue.png') center (center / cover) no-repeat
+.map
+  position: relative
+  min-height: 717px
+  padding: 49px 0
+  background: url('../img/footer/bacground.png') center (center / cover) no-repeat
+  .label
+    color: #000
+    width: 76px
+    height: 24px
+    background-color: #ffffff
+  .title , .subtitle
+    color:  #ffffff
+  &_link
+    position: absolute
+    margin-top: 431px
+    left: 50%
+    transform: translateX(-50%)
+.footer
+  padding: 14px 0 39px 0
+  min-height: 148px
+  .disc_for_icons
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 100%
+    width: 32px
+    height: 32px
+    background-color: #070716
+    a 
+      display: flex
+  .store
+    img
+      display: flex
+      width: 94px
+      height: 27px
+
+  .line
+    width: 299px
+    height: 4px
+    background-color: #1fbad6
+    margin: 0 auto
+  .link
+    width: 390px
+    margin: 0 auto
+  .first_line
+    display: flex
+    justify-content: space-between
+    margin-top:  10px
+    
+    a 
+      color: #070716
+      font-size: 15px
+      font-weight: 300
+      text-transform: uppercase
+
+  .second_line
+    display: flex
+    justify-content: space-between
+    margin-top:  10px
+    a 
+      color: #999999
+      font-size: 11px
+      font-weight: 300
+      text-transform: uppercase
+  .third_line
+    display: flex
+    justify-content: center
+    margin-top:  10px
+    a 
+      color: #1fbad6
+      font-size: 11px
+      font-weight: 400
+      text-transform: uppercase
+  .social
+    position: absolute
+    left: 23px
+    margin-top: 55px
+    width: 155px
+    display: flex
+    justify-content: space-between
+  .storeg
+    position: absolute
+    right: 23px
+    margin-top: 55px
+    width: 296px
+    display: flex
+    justify-content: space-between
+.bot_line
+  height: 8px
+  background-color: #070716
+  
+.subheader .xs_visible
+  display: none
